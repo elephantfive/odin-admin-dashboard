@@ -11,6 +11,7 @@ body {
 .projects {
     display: grid;
     grid-row: span 2;
+    align-content: start;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -23,7 +24,10 @@ body {
 }
 
 .sidebar {
+    align-items: start;
+    align-content: start;
     grid-row: span 2;
+    gap: 25px;
 }
 
 li {
