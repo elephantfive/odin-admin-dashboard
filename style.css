@@ -11,6 +11,15 @@ main {
     grid-row: span 2;
 }
 
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     grid-template-columns: 3fr 1fr;
     align-items: center;
