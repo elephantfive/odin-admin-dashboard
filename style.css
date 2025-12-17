@@ -5,6 +5,21 @@ body {
 
 .main-content {
     grid-column: 2;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-row: span 2;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects h1 {
+    grid-column: span 2;
+}
+
+.announcements, .trending {
+    grid-column: 2;
 }
 
 .sidebar {
