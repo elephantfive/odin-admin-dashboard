@@ -3,7 +3,7 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
-main {
+.main-content {
     grid-column: 2;
 }
 
@@ -27,7 +27,7 @@ ul {
 
 .sidebar,
 .header,
-main {
+.main-content {
     display: grid;
     border: 1px solid black;
 }
