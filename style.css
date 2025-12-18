@@ -65,8 +65,29 @@ ul > li {
     grid-template-columns: 1fr 1fr;
 }
 
+.announcement-container {
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.announcement + .announcement {
+    border-top: 1px solid rgba(128, 128, 128, 0.425);
+}
+
 h1 {
     font-size: x-large;
+}
+
+h2 {
+    margin: 10px 0 0;
+    font-size: large;
+}
+
+h2 + p {
+    font-weight: lighter;
+    margin-top: 5px;
 }
 
 .projects h1 {
@@ -139,6 +160,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+
+
 
 
 .header {
