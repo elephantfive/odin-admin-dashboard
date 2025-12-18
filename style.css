@@ -3,14 +3,26 @@ html {
 }
 
 body {
-    border: 0;
-    margin: 0;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
 
+.search-bar {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 25px 4fr 4fr;
+    align-items: center;
+    gap: 10px;
+}
 
-img {
+input {
+    border-radius: 25px;
+    background: rgba(180, 197, 202, 0.473);
+    border: none;
+    height: 25px;
+}
+
+.sidebar img {
     filter: invert(100%);
 }
 
@@ -67,14 +79,17 @@ li {
     list-style-type: none;
 }
 
-ul {
+ul, 
+body {
     margin: 0;
     padding: 0;
 }
 
 .header {
+    padding: 0 25px;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+    box-shadow: 1px 0 5px black;
 }
 
 .sidebar,
