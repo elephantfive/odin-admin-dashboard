@@ -55,7 +55,7 @@ ul > li {
     gap: 30px;
     background: var(--search-gray);
     grid-column: 2;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 9fr 4fr;
 }
 
 .projects {
@@ -96,6 +96,10 @@ h2 + p {
 
 .announcements, .trending {
     grid-column: 2;
+}
+
+.announcements {
+    font-size: small;
 }
 
 .sidebar {
@@ -189,12 +193,25 @@ button {
     border: none;
 }
 
-.greeting {
+.greeting, .user-container, .user {
     column-gap: 15px;
     display: grid;
     grid-template-columns: min-content max-content;
     align-items: end;
 }
+
+.user {
+    grid-column: span 2;
+}
+
+.user-container {
+    padding: 15px;
+    gap: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+
 
 .greeting p {
     font-size: small;
@@ -208,7 +225,8 @@ button {
     align-self: start;
 }
 
-.greeting img {
+.greeting img,
+.user > img {
     grid-row: span 2;
     height: 80px;
     width: 80px;
